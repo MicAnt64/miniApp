@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto Slab', sans-serif;
+  height: 100vh;
+  background: radial-gradient(#0a0f30, #0e1022);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: whitesmoke;
+}
+
+.card-border-style {
+  border: 2px solid rgb(172, 172, 172);
+}
+
+.card-background-color {
+  background-color: rgb(55, 73, 97) !important;
+}
+
+.data-row:nth-child(even) {
+  background-color: rgb(11, 66, 118);
+}
+
+.data-row:nth-child(odd) {
+  background-color: rgb(2, 44, 84);
+}
+
+.stock-text-neutral {
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+
+.stock-text-negative {
+  font-size: 1.2rem;
+  color: rgb(253, 19, 19);
+}
+
+.stock-text-positive {
+  font-size: 1.2rem;
+  color: rgb(7, 250, 19);
+}
+
+.sort-active {
+  color: orange;
+}
+.sort-active {
+  color: orange;
+}
+
+a.company-link {
+  color: inherit;
+  transition: 300ms;
+  text-decoration: none;
+}
+
+a.company-link:hover {
+  color: rgb(244, 241, 210);
+  font-size: 1.01em;
+}
+
+.blink-text-positive {
+  animation-name: blink-green;
+  animation-duration: 0.15s;
+  animation-iteration-count: 4;
+}
+
+@keyframes blink-green {
+  0% {
+    color: rgb(7, 250, 19);
+  }
+  50% {
+    color: rgb(0, 109, 6);
+  }
+  100% {
+    color: rgb(7, 250, 19);
+  }
+}
+
+.blink-text-negative {
+  animation-name: blink-red;
+  animation-duration: 0.15s;
+  animation-iteration-count: 4;
+}
+
+@keyframes blink-red {
+  0% {
+    color: rgb(253, 19, 19);
+  }
+  50% {
+    color: rgb(152, 4, 4);
+  }
+  100% {
+    color: rgb(253, 19, 19);
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .stock-text-neutral,
+  .stock-text-negative,
+  .stock-text-positive {
+    font-size: 1rem;
+  }
+}
